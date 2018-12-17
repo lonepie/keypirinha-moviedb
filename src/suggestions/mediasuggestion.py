@@ -47,7 +47,8 @@ class MediaSuggestion(Suggestion):
 
     @property
     def target(self) -> str:
-        url = '{}/{}/{}'.format(constants.URL_MOVIEDB_BASE, self._media_type, self._id)
+        #url = '{}/{}/{}'.format(constants.URL_MOVIEDB_BASE, self._media_type, self._id)
+        url = constants.URL_VIDEOSPIDER.format(self._id)
         target = kpu.kwargs_encode(media_type=self._media_type, id=self._id, url=url)
         return target
 

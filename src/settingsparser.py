@@ -21,6 +21,7 @@ class SettingsParser:
         settings = {
             'tmdb_api_key': self.settings.get('tmdb_api_key', section=self.CONFIG_SECTION_MAIN),
             'omdb_api_key': self.settings.get('omdb_api_key', section=self.CONFIG_SECTION_MAIN),
+            'videospider_api_key': self.settings.get('videospider_api_key', section=self.CONFIG_SECTION_MAIN),
             'cache_expire_after': self.settings.get_int('cache_expire_after', section=self.CONFIG_SECTION_MAIN, fallback=self.CONFIG_DEFAULT_CACHE_EXPIRATION),
             'language': self.settings.get('language', section=self.CONFIG_SECTION_MAIN, fallback=self.CONFIG_DEFAULT_LANGUAGE),
             'search_presets': self._load_search_presets(),

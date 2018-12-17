@@ -16,3 +16,5 @@ SUGGESTIONS = {
 
 URL_YOUTUBE_WATCH = 'https://youtube.com/watch?v={}'
 URL_MOVIEDB_BASE = 'https://www.themoviedb.org'
+URL_VIDEOSPIDER_BASE = 'https://videospider.in'
+URL_VIDEOSPIDER = URL_VIDEOSPIDER_BASE + '/getvideo?&video_id={}&tmdb=1'

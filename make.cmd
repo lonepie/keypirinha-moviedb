@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PACKAGE_NAME=MovieDB
+set PACKAGE_NAME=MovieDB-VideoSpider
 set INSTALL_DIR=%APPDATA%\Keypirinha\InstalledPackages
 
 if "%1"=="" goto help

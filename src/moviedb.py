@@ -93,6 +93,9 @@ class Moviedb(kp.Plugin):
             # If it is a moviedb url to be opened, append the language query
             if constants.URL_MOVIEDB_BASE in url:
                 url += '?language={}'.format(self.settings['language'])
+            elif constants.URL_VIDEOSPIDER_BASE in url:
+                url += '&key={}'.format(self.settings['videospider_api_key'])
+
 
             kpu.web_browser_command(url=url, execute=True)
 
